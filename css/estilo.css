@@ -1,0 +1,359 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #eef8ff;
+}
+
+.bug{
+    height: 1vw;
+}
+
+
+/* Carrousell */
+.jumbotron{
+    width: 100vw;
+}
+
+.jumbo__titulo{
+    font-size: 60px;
+    
+}
+
+.jumbo{
+    height: 100%;
+}
+
+.jumbo__diff{
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end !important;
+}
+
+.jumbo__paulo{
+    align-items: center !important;
+    color: rgb(0, 0, 0);
+}
+
+.imagen__slide{
+    height: 50vw;
+}
+
+/* Boton */
+.boton{
+    padding: 5px 15px;
+    font-size: 18px;
+    transition: .4s;
+}
+
+.boton:hover{
+    transform: scale(1.03);
+    font-weight: 500;
+
+    background-color: #00093c;
+    transition: transform .2s;
+}
+
+
+/* Sponsors */
+.sponsors{
+    height: 40vh;
+    width: 100vw;
+}
+
+.sponsors{
+    background: #FFF0C9;
+}
+
+.icono:hover{
+border-radius:50%;
+box-shadow: 0px 0px 15px 15px #ec731e;
+transform: rotate(360deg) scale(1.2) !important;;
+transition: all 1s;
+}
+
+
+/* Mapa*/
+.mapaImagen{
+    cursor: pointer;
+    font-weight: 600;
+    padding: 5px 10px;
+    left: 0%;
+    width: max-content;
+    height: max-content;
+    border-radius: 5px;
+    border: #000000 3px groove;
+    right: 0%;
+    content: "culo de perro";
+    position: absolute;
+    z-index: 1;
+    background-color: #000000a0 !important;
+    color: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    transition: .5s;
+}
+
+.mapaImagen::before{
+    content: "";
+
+}
+
+.mapaImagen:hover{
+    opacity: 1;
+    visibility: inherit;
+}
+
+.mapaImagen__110::before{
+    content: "$110";
+}
+
+.mapaImagen__130::before{
+    content: "$130";
+}
+
+.mapaImagen__90::before{
+    content: "$90";
+}
+
+.mapaImagen__76::before{
+    content: "$76";
+}
+
+.mapaImagen__68::before{
+    content: "$68";
+}
+
+.mapaImagen__imagen{
+    border-radius: 10px;
+}
+
+.tituloss{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+
+/* Menu */
+.cabecera{
+    z-index: 100;
+    margin: 0;
+    padding: 0;
+}
+
+/* Pie de pagina */
+footer{
+    bottom: 0;
+    background: linear-gradient(to right, #00093c, #2d0b00);
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
+    padding: 100px 0 30px;
+    margin-top: 50px;
+}
+
+.columnas{
+    padding: 10px;
+}
+
+.logo{
+    width: 200px;
+    margin-bottom: 30px;
+}
+
+.columnas h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email__id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+form{
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+form input,
+form textarea{
+    width: 93%;
+    background: transparent;
+    color: #ccc;
+    padding: 4px;
+    border: 3px solid rgba(247, 247, 247, 0.096);
+    outline: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+form textarea{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+}
+
+.iconos__sociales .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.Matea{
+    text-align: center;
+}
+
+/* Card Recomendaciones */
+.targeta{
+    transition: .5s;
+}
+.targeta:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: .5s;
+    -webkit-box-shadow: 0px 0px 41px 12px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 0px 41px 12px rgba(0,0,0,0.45);
+    box-shadow: 0px 0px 41px 12px rgba(0,0,0,0.45);
+}
+
+/* Media queries */
+@media screen and (max-width: 992px) {
+    .mapaImagen{
+        display: none;
+    }
+}
+
+@media screen and (max-width:1580px){
+    .bug{
+        height: 10vw;
+    }
+}
+@media screen and (max-width:1200px){
+    .bug{
+        height: 15vw;
+    }
+}
+@media screen and (max-width:991px){
+    .bug{
+        height: 33vw;
+    }
+    .boton {
+        width: 100%;
+    }
+}
+@media screen and (max-width:942px){
+    .bug{
+        height: 34vw;
+    }
+    .jumbo__parrafo{
+        display: none;
+    }
+    .jumbo__titulo{
+        color: rgb(255, 255, 255);
+    }
+}
+@media screen and (max-width:768px){
+    .bug{
+        height: 28vw;
+    }
+    .jumbo__parrafo1{
+        color: rgb(255, 255, 255);
+    }
+}
+@media screen and (max-width:657px){
+    .bug{
+        height: 33vw;
+    }
+    .jumbo__parrafo1{
+        display: none;
+    }
+}
+@media screen and (max-width:578px){
+    .bug{
+        height: 27vw;
+    }
+    .carrusell{
+        height: 80vh !important;
+        opacity: 0;
+    }
+    .carrusel1{
+        background-image: url(./images/Justinn.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .carrusel2{
+        background-image: url(./images/KaliB.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .carrusel3{
+        background-image: url(./images/PauloB.jpg);
+        background-position: center;
+        background-size: cover;
+
+    }
+    .jumbo__parrafo1{
+        display: block;
+    }
+    .jumbo__parrafo{
+        display: block;
+    }
+}
+
+/* Borra bug */
+body{
+    overflow-x: hidden;
+}

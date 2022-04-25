@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiveAID-Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="./Img/concierto.png" type="image/x-icon" />
+
+    <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+</head>
+<body style="background: linear-gradient(45deg, #6ac1c5, #bda5ff);">
+
+  <!--Cabecera-->
+  <header class="container-fluid position-fixed cabecera">
+    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand m-auto d-none d-md-block" href="#"><img src="./Img/canto.png" width="100px" alt="Logo"></a>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse d-flex " id="navbarNavDarkDropdown">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item m-2 d-none d-sm-block">
+              <a class="nav-link active fs-5" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item dropdown m-2">
+              <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-center" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item fs-5" href="#Buscado">Lo mas buscado</a></li>
+                <li><a class="dropdown-item fs-5" href="#Lugares">Lugares</a></li>
+                <li><a class="dropdown-item fs-5" href="#Boleteria">Boleteria</a></li>
+                <li><a class="dropdown-item fs-5" href="#Contacto">Contacto</a></li>
+              </ul>
+            </li>
+            <li class="nav-item m-2 ">
+              <a class="nav-link  fs-5" aria-current="page" href="Proximos Eventos.html">Proximos Eventos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Cuerpo-->
+    <main class="tope">
+
+      <!--Control margen-->
+      <div class="bug"></div>
+        <section class=" jumbotron tope" >
+          <!--Carrousell-->
+            <div id="carouselExampleControls" class="carousel slide jumbotron " data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <!--Carrosell-item1-->
+                  <div class="carousel-item active carrusel1">
+                    <img src="./Img/Just.webp" class=" carrusell  d-block w-100 imagen__slide" alt="Justin Bieber imagen" >
+                    <div class=" jumbo carousel-caption d-xs-none d-flex justify-content-center align-items-lg-start  flex-column ">
+                      <h2 class="jumbo__titulo fw-bold">Justin Bieber</h2>
+                      <p class="jumbo__parrafo1 fs-3 mb-5">Montevideo  23-04-2022 16:00hs</p>
+                      <p class="w-60 jumbo__parrafo my-5 text-start">Lorem, ipsum dolor sit amet consit ipsa 
+                              beatae mercitationenve <br> dffdvfsed ipsa perferendis natus sit et?</p>
+                      <a href="#" class="btn btn-dark boton">Entradas</a>
+                    </div>
+                  </div>
+                  
+                  <!--Carrosell-item2-->
+                  <div class="carousel-item carrusel2" >
+                    <img src="./Img/Kali.jpg" class="carrusell d-block w-100 imagen__slide" alt="Kali Uchis imagen" >
+                    <div class="jumbo__diff jumbo carousel-caption d-xs-none d-flex justify-content-center align-items-lg-start  flex-column ">
+                      <h2 class="jumbo__titulo fw-bold">Kali Uchis</h2>
+                      <p class="jumbo__parrafo1 fs-3 mb-5">Montevideo  22-04-2022 18:00hs</p>
+                      <p class="w-60 jumbo__parrafo mt-5 my-5 text-start">Lorem, ipsum dolor sit amet consit ipsa 
+                        beatae mercitationenve <br> dffdvfsed ipsa perferendis natus sit et?</p>
+                      <a href="#" class="btn btn-dark boton mb-5">Entradas</a>
+                    </div>
+                  </div>
+
+                  <!--Carrosell-item3-->
+                  <div class="carousel-item carrusel3" >
+                    <img src="./Img/Paulo.webp" class="carrusell d-block w-100 imagen__slide" alt="Paulo Londra imagen" >
+                    <div class="jumbo__diff jumbo__paulo jumbo carousel-caption d-xs-none d-flex justify-content-center align-items-lg-start  flex-column ">
+                      <h2 class="jumbo__titulo">Paulo Londra:</h2>
+                      <p class="jumbo__parrafo1 fs-3 mb-3">Montevideo  25-04-2022 14:00hs</p>
+                      <p class="w-60 jumbo__parrafo text-center mt-2 mb-4">Lorem, ipsum dolor sit amet consit ipsa 
+                              beatae mercitationenve <br> dffdvfsed ipsa perferendis natus sit et?</p>
+                      <a href="#" class="btn btn-dark boton">Entradas</a>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Carrousell-botones-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" >
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+
+        <!--Recomendaciones-Card-->
+        <section class="masBuscado container my-5 tope" >
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class=" col-12 text-center w-100"><h3 class="" id="Buscado">Lo mas buscado:</h3></div>
+
+                <!--Card-1-->
+                <div class="col-lg-3 col-md-6">
+                  <div class="card h-100 targeta">
+                    <img src="./Img/avici.jpg" class="card-img-top h-75" alt="Avici">
+                    <div class="card-body">
+                      <h5 class="card-title">Avici</h5>
+                      <p class="card-text">Montevideo  25-04-2022 14:00hs</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Card-2-->
+                <div class="col-lg-3 col-md-6">
+                  <div class="card h-100 targeta">
+                    <img src="./Img/rosalia.jpeg" class="card-img-top h-75" alt="Rosalia">
+                    <div class="card-body">
+                      <h5 class="card-title">Rosalia</h5>
+                      <p class="card-text">Montevideo  25-04-2022 14:00hs</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!--Card-3-->
+                <div class="col-lg-3 col-md-6">
+                  <div class="card h-100 targeta">
+                    <img src="./Img/katyPerry.jpg" class="card-img-top h-75" alt="Katy Perry">
+                    <div class="card-body">
+                      <h5 class="card-title">Katy Perry</h5>
+                      <p class="card-text">Montevideo  25-04-2022 14:00hs</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <!--Card-4-->
+                <div class="col-lg-3 col-md-6">
+                  <div class="card h-100 targeta">
+                    <img src="./Img/queen.jpg" class="card-img-top h-75" alt="Queen">
+                    <div class="card-body">
+                      <h5 class="card-title">Queen</h5>
+                      <p class="card-text">Montevideo  25-04-2022 14:00hs</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        
+        <!--Sponsors-->
+        <section class="tope sponsors d-flex flex-column justify-content-sm-evenly align-items-center">
+            <div class="d-flex flex-column align-items-center">
+                <i class="fa fa-handshake-o fa-5x" aria-hidden="true"></i> 
+                <h3>Sponsors</h3>
+            </div>
+            <div class="d-flex flex-row justify-content-evenly w-75 flex-wrap"><i class="icono fa fa-brands fa-spotify fa-4x"></i><i class="icono fab fa-brands fa-microsoft fa-4x"></i><i class="icono fa fa-brands fa-twitch fa-4x"></i><i class="icono fa fa-brands fa-cc-mastercard fa-4x"></i><i class="icono fa fa-brands fa-vimeo fa-4x"></i></div>
+            <button class="btn btn-dark w-75  boton">Conócelos</button>
+        </section>
+
+        <!--Mapa-asientos-->
+        <section class="container my-5 tope">
+          <div class="row">
+            <div class="col-12 d-none d-lg-block text-center titulos"><h2 class="my-5" id="Lugares">Lugares:</h2></div>
+            <div class="col-12 d-none d-lg-block text-center">
+              <img class="mapaImagen__imagen " src="./Img/eEstadio.png" alt="" usemap="#mapa">
+              <map class="position-absolute" name="mapa" id="mapa">
+                <!--Color-Amarillo-->
+                <area class="mapaImagen mapaImagen__110" target="" alt="" title="" nohref="nohref" coords="250,368,250,357,238,312,270,309,284,355,285,366" shape="poly">
+                <area class="mapaImagen mapaImagen__110" target="" alt="" title="" nohref="nohref" coords="295,364,329,364,329,352,312,308,281,309,279,320" shape="poly">
+                
+                <!--Color-Rosa-->
+                <area class="mapaImagen mapaImagen__130" target="" alt="" title="" nohref="nohref" coords="279,207,283,184,290,135,201,139,209,148,215,187,224,199,225,208" shape="poly">
+                
+                <!--Color-Rojo-->
+                <area class="mapaImagen mapaImagen__90" target="" alt="" title="" nohref="nohref" coords="329,353,330,364,375,362,372,353,355,306,341,305,333,283,292,270,269,270,267,278,278,313,281,309,311,307" shape="poly">
+                <area class="mapaImagen mapaImagen__90" target="" alt="" title="" nohref="nohref" coords="210,372,195,315,203,314,199,289,235,272,259,271,270,308,237,311,250,359,250,368" shape="poly">
+                <area class="mapaImagen mapaImagen__90" target="" alt="" title="" nohref="nohref" coords="212,255,211,248,198,240,213,233,230,232,241,241,241,250,226,250" shape="poly">
+                <area class="mapaImagen mapaImagen__90" target="" alt="" title="" nohref="nohref" coords="191,215,190,206,172,197,192,189,215,187,224,198,225,209,207,209" shape="poly">
+                <area class="mapaImagen mapaImagen__90" target="" alt="" title="" nohref="nohref" coords="173,169,172,159,159,151,178,140,201,138,209,147,209,158,190,159" shape="poly">
+                <area class="mapaImagen mapaImagen__90" target="" alt="" title="" nohref="nohref" coords="308,252,308,243,316,235,300,229,283,229,278,240,278,248,294,248" shape="poly">
+                <area class="mapaImagen mapaImagen__90" target="" alt="" title="" nohref="nohref" coords="317,211,318,201,329,191,305,185,284,184,279,195,279,206,299,205" shape="poly">
+                <area class="mapaImagen mapaImagen__90" target="" alt="" title="" nohref="nohref" coords="330,162,332,151,340,143,316,134,290,133,287,145,287,155,309,154" shape="poly">
+                
+                <!--Color-Azul-->
+                <area class="mapaImagen mapaImagen__76" target="" alt="" title="" nohref="nohref" coords="175,276,164,274,160,266,198,240,211,247,213,256,177,283" shape="poly">
+                <area class="mapaImagen mapaImagen__76" target="" alt="" title="" nohref="nohref" coords="143,249,141,240,130,238,129,227,143,215,172,197,190,206,191,216" shape="poly">
+                <area class="mapaImagen mapaImagen__76" target="" alt="" title="" nohref="nohref" coords="115,216,115,204,107,204,105,190,158,150,172,158,173,170" shape="poly">
+                <area class="mapaImagen mapaImagen__76" target="" alt="" title="" nohref="nohref" coords="359,276,361,267,377,262,318,235,309,243,309,252" shape="poly">
+                <area class="mapaImagen mapaImagen__76" target="" alt="" title="" nohref="nohref" coords="384,239,386,229,404,224,400,219,330,191,318,201,319,212" shape="poly">
+                <area class="mapaImagen mapaImagen__76" target="" alt="" title="" nohref="nohref" coords="407,200,331,163,332,151,340,143,419,180,423,185,408,189" shape="poly">
+                <area class="mapaImagen mapaImagen__76" target="" alt="" title="" nohref="nohref" coords="93,177,92,169,76,167,74,161,165,103,325,97,437,143,439,149,428,152,427,161,321,115,176,120" shape="poly">
+                <area class="mapaImagen mapaImagen__76" target="" alt="" title="" nohref="nohref" coords="60,147,155,83,171,82,322,77,449,129,449,119,468,113,331,57,145,63,36,131,34,135,58,137" shape="poly">
+                
+                <!--Color-Naranja-->
+                <area class="mapaImagen mapaImagen__68" target="" alt="" title="" nohref="nohref" coords="153,33,181,43,293,39,313,28,313,20,311,15,152,18" shape="poly">
+                <area class="mapaImagen mapaImagen__68" target="" alt="" title="" nohref="nohref" coords="188,324,180,325,163,274,175,276" shape="poly">
+                <area class="mapaImagen mapaImagen__68" target="" alt="" title="" nohref="nohref" coords="159,297,141,295,130,238,142,240,144,250" shape="poly">
+                <area class="mapaImagen mapaImagen__68" target="" alt="" title="" nohref="nohref" coords="127,267,119,267,108,204,114,205,116,216" shape="poly">
+                <area class="mapaImagen mapaImagen__68" target="" alt="" title="" nohref="nohref" coords="100,230,89,231,75,165,92,169,92,179" shape="poly">
+                <area class="mapaImagen mapaImagen__68" target="" alt="" title="" nohref="nohref" coords="69,205,41,206,32,145,34,134,60,136,61,147,61,154" shape="poly">
+                <area class="mapaImagen mapaImagen__68" target="" alt="" title="" nohref="nohref" coords="376,321,379,312,395,311,376,262,360,267,360,277" shape="poly">
+                <area class="mapaImagen mapaImagen__68" target="" alt="" title="" nohref="nohref" coords="406,293,408,283,426,281,404,224,386,229,384,239,388,248" shape="poly">
+                <area class="mapaImagen mapaImagen__68" target="" alt="" title="" nohref="nohref" coords="430,257,433,247,451,245,423,184,408,189,407,200,414,214" shape="poly">
+                <area class="mapaImagen mapaImagen__68" target="" alt="" title="" nohref="nohref" coords="454,218,457,207,467,206,441,148,429,151,427,161,432,167" shape="poly">
+                <area class="mapaImagen mapaImagen__68" target="" alt="" title="" nohref="nohref" coords="479,190,482,180,504,177,471,113,450,118,448,128,453,136" shape="poly">
+              </map>
+            </div>
+          </div>
+        </section>
+
+        <!--Tabla Boleteria-->
+        <section class="Tabla container">
+          <div class="row">
+            <div class="col-12 text text-center"><h2 class="mt-5 mb-3" id="Boleteria">Boleteria:</h2></div>
+            <div class="col-12">
+              <table class="text-center table table-hover table-dark table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Cantante:</th>
+                    <th scope="col">Fecha:</th>
+                    <th scope="col">Disponibles:</th>
+                    
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  <tr>
+                    <th scope="row">Maria Becerra</th>
+                    <td>24-10-2022</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Residente</th>
+                    <td>13-03-2022</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Bzrp</th>
+                    <td>27-04-2022</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Maria Becerra</th>
+                    <td>24-10-2022</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Residente</th>
+                    <td>13-03-2022</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Bzrp</th>
+                    <td>27-04-2022</td>
+                    <td>10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Maria Becerra</th>
+                    <td>24-10-2022</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Residente</th>
+                    <td>13-03-2022</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Bzrp</th>
+                    <td>27-04-2022</td>
+                    <td>10</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+        
+        <!--Mapa Google-->
+        <section class="tope container my-5">
+          <div class="row">
+            <div class="col">
+              <div class="d-flex justify-content-center">          
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1944.8469574681153!2d-56.16158400813527!3d-34.935808545564534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f822a9e13a7ff%3A0x388c643a31dfaf62!2sFaro%20de%20Punta%20Carretas!5e0!3m2!1ses-419!2suy!4v1650559385394!5m2!1ses-419!2suy" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+    </main>
+
+    <!--Pie de pagina-->
+    <footer class="container-fluid" id="Contacto">
+    <div class="row m-auto d-flex flex-wrap flex-row align-items-start justify-content-between w-75">
+      
+      <!--Primer Columna-->
+      <div class="col-lg-3 col-md-7 col-xs-12 columnas">
+        <img src="./Img/canto.png" class="logo" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipo modi excepturi perferendis, unde quidem ullam eaque, minus nostrum sunt? Nisi impedit non quo amet animi fuga.</p>
+      </div>
+
+      <!--Equipo-->
+      <div class="col-lg-2 col-md-5 col-xs-12 columnas">
+        <h3>Equipo:</h3>
+        <p>Nahuel Apellido</p>
+        <p>Franco Apellido</p>
+        <p>Pabloc43</p>
+        <p class="email__id">nombreReal@gmail.com</p>
+        <h4>+598 099 888 777</h4>
+      </div>
+
+      <!--Formulario de contacto-->
+      <div class="col-lg-3 col-xs-12 columnas">
+        <h3>Contacto:</h3>
+        <form action="https://formsubmit.co/pablonicolascamejo@gmail.com" method="post">
+          
+          <i class="far fa-user" style="cursor: pointer;"></i>
+          <input type="text" placeholder="Nombre" required>
+          
+          <i class="far fa-envelope" style="cursor: pointer;"></i>
+          <input type="email" placeholder="Ingresa tu email" required>
+
+          <textarea type="email" placeholder="Mensaje" required></textarea>
+          <button type="submit" style="margin-left: auto;"><i class="fas fa-arrow-right"></i></button>
+
+
+        </form>
+      </div>
+      
+      <!--Redes-->
+      <div class="col-12 iconos__sociales">
+        <i class="fab fa-brands fa-facebook-f"></i>
+        <i class="fab fa-brands fa-instagram"></i>
+        <i class="fab fa-brands fa-twitter"></i>
+      </div>
+    </div>
+
+<hr>
+<pre class="Matea">Creado para Matea 2022</pre>
+    </footer>
+</body>
+</html>
